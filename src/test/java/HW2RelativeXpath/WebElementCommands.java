@@ -16,7 +16,8 @@ public class WebElementCommands {
 WebElement retriveText=driver.findElement(By.id("textattr"));
 String text=retriveText.getText();
         System.out.println("Retrieve Attribute: "+text);
-//2. Meal Preference:
+
+        //2. Meal Preference:
         //   - Choose the checkbox for the meal preference "Musical Festival," ensuring the checkbox is enabled before clicking on it.
 WebElement checkboxMealPreference =driver.findElement(By.xpath("//input[@value='music_festival']"));
 boolean stateOfR1=checkboxMealPreference.isEnabled();
